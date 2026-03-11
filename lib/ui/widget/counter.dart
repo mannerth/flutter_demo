@@ -19,6 +19,13 @@ class _CounterState extends State<Counter> {
       //通过继承的widget属性访问组件类的属性
       _count += widget.delta;
     });
+
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
   }
 
   @override
@@ -37,5 +44,11 @@ class _CounterState extends State<Counter> {
         });
       },
     );
+  }
+
+  @override
+  void dispose() {
+    
+    super.dispose();
   }
 }
